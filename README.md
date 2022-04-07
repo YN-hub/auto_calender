@@ -10,7 +10,7 @@
  
 このデバイスを使用するにはいくつかステップを踏む必要があります。
 ※必要なデバイス
-* Raspberry Pi (Ubuntu Server版)
+* Raspberry Pi (Ubuntu Server版) <- 筆者はRaspberry Pi 3を使用
 * NFCカードリーダ（Sony PaSoRi, RC-S380）
 
 ### 1.Google Calender APIを有効化
@@ -39,8 +39,9 @@
  * auto_calender.pyを実行
 ## Options
 いくつか追加実装可能な機能
-* Raspberry Piの起動と同時にauto_calender.pyが実行されるようにする -> Raspberry Pi のターミナルで"crontab -e"を実行し、"@reboot python3 /home/pi/auto_calender.py"を追加
-* Raspberry PiにつなぐLEDについて　-> 
+* Raspberry Piの起動と同時にauto_calender.pyが実行されるようにする -> Raspberry Pi のターミナルで"crontab -e"を実行し、"@reboot python3 auto_calender.py"を追加
+* Raspberry PiにつなぐLEDについて　->　17pinと27pinに信号を衆力しているので、抵抗を介してLEDを接続してください
+* Raspberry Piにつなぐブザーについて　-> ＰＫＭ１３ＥＰＹＨ４０００－Ａ０を使用しているので、購入した際は27pinとGNDの間に接続すると音が鳴ります。
 
 
 
